@@ -136,6 +136,47 @@ ENV/
 env.bak/
 venv.bak/
 
+# Environment files added by ./JA
+.env.*
+.env/
+.venv/
+
+# Log and Debug files added by ./JA
+*.out
+*.err
+
+# Test results and Coverage added by ./JA
+*.coverage
+*.pytest_cache/
+.cache/
+
+# Distribution and Build Files added by ./JA
+*.whl
+
+# IDE and Editor Files added by ./JA
+.vscode/
+*.code-workspace
+*.swp
+
+# Dependency Files added by ./JA
+*.conda
+
+# Operating System Files added by ./JA
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+~*
+
+# Other Optional Files added by ./JA
+*.ipynb
+*~
+.*.swp
+.temp
+
 # Spyder project settings
 .spyderproject
 .spyproject
