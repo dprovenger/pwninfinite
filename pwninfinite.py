@@ -12,13 +12,13 @@ class PwnInfiniteShell(cmd.Cmd):
   
 
   def do_help(self, arg):
-      "\nShow available commands or help for a specific command.\n"
+      "\nShow available commands or help for a specific command.\nUsage: help <command>\n"
       super().do_help(arg)
 
 
   # Command to use a module
   def do_use(self, module):
-      "\nSelect a module. Usage: use <module_name>.\n"
+      "\nSelect a module.\nUsage: use <module_name>\n"
       if module:
           print(f"\nModule '{module}' selected.\n")
       else:
@@ -26,7 +26,7 @@ class PwnInfiniteShell(cmd.Cmd):
 
 
   def do_run(self, arg):
-      "\nExecute the currently selected module.\n"
+      "\nExecute the currently selected module.\nUsage: run\n"
       print("\nRunning the selected module ...\n")
 
 
