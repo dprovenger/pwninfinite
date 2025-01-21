@@ -40,7 +40,7 @@ class PwnInfiniteShell(cmd.Cmd):
         spec.loader.exec_module(module)
 
         if hasattr(module, "main") and callable(module.main):
-            print(f"\nRunning {module_name}...")
+            print(f"\nRunning {module_name}...\n")
             module.main()
         else:
             print(f"Error:Module '{module_name}' does not have a callable 'main()' function.")
