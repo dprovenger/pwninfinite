@@ -141,6 +141,9 @@ venv.bak/
 .env/
 .venv/
 
+# Artifacts fileas added by ./JA
+artifacts/
+
 # Log and Debug files added by ./JA
 *.out
 *.err
