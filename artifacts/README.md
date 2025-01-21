@@ -1,6 +1,6 @@
 # pwninfinite
 
-# Artifacts directory
+## Artifacts directory
 This directory is part of the pwninfinite project.
 Files with artifacts or findings will be placed here.
 
