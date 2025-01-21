@@ -24,7 +24,7 @@ class PwnInfiniteShell(cmd.Cmd):
         if not self.modules:
             print("\nNo modules found under that module name.\n")
         else:
-            print("\nAvailable modules:")
+            print("\nAvailable modules to run:")
             for module in self.modules:
                 print(f" - {module}\n")
 
