@@ -34,6 +34,11 @@ def scan_cidr_block(ip, ports_to_scan=range(1, 1025)):
     open_ports = {}
 
     for host in network.hosts(): # Repeat over all hosts in the network
+        # Skip localhost (127.0.0.0/8 network)
+        if ipaddress.ip_address(host).is_loopback:
+            print(f"\nSkipping localhost IP: {host}")
+            continue
+
         for port in ports_to_scan:
             if scan_port(str(host), port):
                 if str(host) not in open_ports:
