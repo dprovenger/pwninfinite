@@ -14,7 +14,7 @@ def get_ip_addresses():
                 ip_info[interface].append({"type": "IPv6", "address": addr.address})
     return ip_info
 
-def save_to_json(data, file_path="artifacts/ips.json"):
+def save_to_json(data, file_path="artifacts/localHostIps.json"):
     """Save IP information to a JSON file"""
     with open(file_path, "w") as f:
         json.dump(data, f, indent=4)
